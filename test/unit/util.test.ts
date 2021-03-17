@@ -1,4 +1,5 @@
 import { JSDOM } from "jsdom"
+import { Cookie as CookieEnum } from "../../lib/vscode/src/vs/server/common/cookie"
 import {
   arrayify,
   generateUuid,
@@ -11,7 +12,6 @@ import {
   trimSlashes,
   normalize,
 } from "../../src/common/util"
-import { Cookie as CookieEnum } from "../../src/node/routes/login"
 import { hash } from "../../src/node/util"
 import { PASSWORD } from "../utils/constants"
 import { checkForCookie, createCookieIfDoesntExist, loggerModule, Cookie } from "../utils/helpers"
